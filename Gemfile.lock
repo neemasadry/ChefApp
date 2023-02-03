@@ -1471,6 +1471,8 @@ GEM
     country_select (8.0.1)
       countries (~> 5.0)
     crass (1.0.6)
+    cssbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     csv (3.2.6)
     date (3.3.3)
     debug (1.7.1)
@@ -1702,8 +1704,6 @@ GEM
     stripe (8.2.0)
     strong_migrations (1.4.2)
       activerecord (>= 5.2)
-    tailwindcss-rails (2.0.21-arm64-darwin)
-      railties (>= 6.0.0)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.1)
@@ -1752,6 +1752,7 @@ DEPENDENCIES
   capybara
   countries (~> 5.3, >= 5.3.1)
   country_select (~> 8.0, >= 8.0.1)
+  cssbundling-rails
   csv (~> 3.2, >= 3.2.6)
   debug
   delayed_job_active_record
@@ -1786,7 +1787,6 @@ DEPENDENCIES
   stimulus-rails
   stripe (~> 8.0)
   strong_migrations (~> 1.4, >= 1.4.2)
-  tailwindcss-rails
   turbo-rails
   tzinfo-data
   web-console
