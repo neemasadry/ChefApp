@@ -35,8 +35,8 @@ Ultimately, the best solution we select for our Rails app will depend on several
 All features, bug fixes, documentation changes, and feedback should be done within the GitHub Repo as either a separate [PR (Pull Request)](https://github.com/neemasadry/ChefApp/pulls) or [Issue](https://github.com/neemasadry/ChefApp/issues).
 
 Use the following templates when creating:
-* [A new PR](https://github.com/neemasadry/ChefApp/blob/main/PR_TEMPLATE.md). *Note: More information on Pull Requests can be found in [Part 1](https://axolo.co/blog/p/part-1-what-are-github-pull-requests) and [Part 2](https://axolo.co/blog/p/part-2-how-to-open-a-pull-request) in this blog.*
-* [A new issue](https://github.com/neemasadry/ChefApp/blob/main/ISSUE_TEMPLATE.md) *Note: More information on Issues can be found in [this post](https://embeddedartistry.com/blog/2017/08/18/a-github-issue-template-for-your-projects/)*
+* [A new PR](https://github.com/neemasadry/ChefApp/blob/main/.github/custom_pull_request_template.md). *Note: More information on Pull Requests can be found in [Part 1](https://axolo.co/blog/p/part-1-what-are-github-pull-requests) and [Part 2](https://axolo.co/blog/p/part-2-how-to-open-a-pull-request) in this blog.*
+* [A new issue](https://github.com/neemasadry/ChefApp/blob/main/.github/ISSUE_TEMPLATE/detailed_issue.md) *Note: More information on Issues can be found in [this post](https://embeddedartistry.com/blog/2017/08/18/a-github-issue-template-for-your-projects/)*
 
 Moreover, commits *must be managelable* in size for effective code review and debugging that can be conducted by at least one other team member.
 
