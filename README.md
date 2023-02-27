@@ -29,6 +29,30 @@ Ultimately, the best solution we select for our Rails app will depend on several
 3. Team member experience
 4. Robustness
 
+
+## Development Guidelines
+
+All features, bug fixes, documentation changes, and feedback should be done within the GitHub Repo as either a separate [PR (Pull Request)](https://github.com/neemasadry/ChefApp/pulls) or [Issue](https://github.com/neemasadry/ChefApp/issues).
+
+Use the following templates when creating:
+* [A new PR](https://github.com/neemasadry/ChefApp/blob/main/PR_TEMPLATE.md). *Note: More information on Pull Requests can be found in [Part 1](https://axolo.co/blog/p/part-1-what-are-github-pull-requests) and [Part 2](https://axolo.co/blog/p/part-2-how-to-open-a-pull-request) in this blog.*
+* [A new issue](https://github.com/neemasadry/ChefApp/blob/main/ISSUE_TEMPLATE.md) *Note: More information on Issues can be found in [this post](https://embeddedartistry.com/blog/2017/08/18/a-github-issue-template-for-your-projects/)*
+
+Moreover, commits *must be managelable* in size for effective code review and debugging that can be conducted by at least one other team member.
+
+For example, let's say a team member implements the following changes:
+1. Generate a new `scaffold`
+2. Modify another existing `model`
+3. Fix a bug in a `view` file
+
+Each of these changes should be a **separate** commit *and* these commits need to be made in the appropriate branches.
+
+**Do *not* put all changes in one large commit!**
+
+**Do *not* make all commits in just one generic branch, especially the `main` branch!**
+
+Each commit message should start off with the appropriate [GitEmoji](https://gitmoji.dev/) at the beginning of the message line. While not an absolute requirement, this can help all team members, including the individual who created the original commit, to navigate the commit history as the project increases in size and complexity.
+
 ## Database
 
 We'll be using the popular RDBMS [PostgreSQL](https://www.postgresql.org/docs/15/index.html) (via [pg gem](https://github.com/ged/ruby-pg)), along with [ActiveRecord as our ORM](https://guides.rubyonrails.org/active_record_basics.html), and [ActiveStorage](https://guides.rubyonrails.org/active_storage_overview.html) for managing file uploads.
@@ -68,6 +92,54 @@ Instructions for installing `stripe-cli` can be found here: https://stripe.com/d
 
 
 ## Helpful commands
+
+### Git
+
+Listed below are a few basic Git commands:
+*Note: More commands can be found either on [Atlassian's Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes) or other sources by searching Google.*
+
+* See current status of all modifications to `tracked` and `untracked` files:
+```bash
+git status
+```
+
+* Add (i.e., save) all changes to the current `stash` for committing:
+```bash
+git add .
+```
+
+* Commit all changes added to the current `stash` (see previous step).
+```bash
+git commit -m "COMMIT MESSAGE"
+```
+*Note: The commit message **must** be added using double-quotes.*
+
+* Switch to another branch:
+```bash
+git checkout branch_name
+```
+*Note: Use `-b` flag to create a new branch and switch into it.*
+
+* Push all Git commits and changes to the remote repositry:
+```bash
+git push origin BRANCH_NAME
+```
+
+* Used to fetch and download content from a remote repository and immediately update the local repository to match that content:
+```bash
+git pull <remote>
+```
+
+* Undo local private changes:
+```bash
+git reset
+```
+
+* Undoing shared public changes
+```bash
+git revert
+```
+
 
 ### Bundler
 * Install gem(s) in Gemfile:
