@@ -15,10 +15,11 @@ Feature/Service | Solution
 --- | ---
 Hosting | [AWS Elastic Beanstalk]() **or** [Netlify](https://www.netlify.com/pricing/) **or** [Railway](https://docs.railway.app/) **or** [Heroku](https://www.heroku.com/pricing)
 File Storage | [AWS S3](https://aws.amazon.com/s3/)
-Background jobs | [DelayedJob](https://github.com/collectiveidea/delayed_job) **or** [Sidekiq](https://github.com/sidekiq/sidekiq)
-CI/CD pipeline | [CircleCI](https://circleci.com/circleci-versus-github-actions/) **or** [GitHub Actions](https://github.com/features/actions)
-Site-wide search | [OpenSearch v2.5](https://opensearch.org/docs/2.5/) **or** [Meilisearch v1.0.2](https://docs.meilisearch.com/learn/what_is_meilisearch/overview.html)
-Payment processing | [Stripe](https://stripe.com/docs/development) - via [Pay](https://github.com/pay-rails/pay) gem
+Background Jobs | [DelayedJob](https://github.com/collectiveidea/delayed_job) **or** [Sidekiq](https://github.com/sidekiq/sidekiq)
+Feature Flags | [Flipper](https://www.flippercloud.io/docs)
+CI/CD Pipeline | [CircleCI](https://circleci.com/circleci-versus-github-actions/) **or** [GitHub Actions](https://github.com/features/actions)
+Site-Wide & Autocomplete Search | [OpenSearch v2.5](https://opensearch.org/docs/2.5/) **or** [Meilisearch v1.0.2](https://docs.meilisearch.com/learn/what_is_meilisearch/overview.html)
+Payment Processing | [Stripe](https://stripe.com/docs/development) - via [Pay](https://github.com/pay-rails/pay) gem
 
 
 Ultimately, the best solution we select for our Rails app will depend on several factors:
@@ -85,7 +86,7 @@ yarn install
 ```
 * Install *specific* package that will be *added* to `package.json`:
 ```bash
-yarn install <PACKAGE_NAME>
+yarn install PACKAGE_NAME
 ```
 * Upgrade *all* packages listed in `package.json`:
 ```bash
