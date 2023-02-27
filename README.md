@@ -100,7 +100,7 @@ rails routes
 ```
 * Return list of Rails routes containing specified substring:
 ```bash
-rails routes | grep <SUBSTRING>
+rails routes | grep SUBSTRING
 ```
 * Launch Rails console:
 ```bash
